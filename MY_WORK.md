@@ -32,8 +32,7 @@
 | **Full Name** | HANEEN SAEED ALOMARI |
 | **Student ID** | 445052073 |
 | **University Email** | 445052073@std.psau.edu.sa |
-| **GitHub Username** | حنين العمري
-445052073-hub |
+| **GitHub Username** | 445052073-hub |
 | **Repository Link** | 445052073-hub/OS-Assignment1-Haneen-Alomari |
  
 ---
