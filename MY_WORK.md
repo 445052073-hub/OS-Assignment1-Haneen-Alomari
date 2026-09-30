@@ -29,7 +29,7 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
+| **Full Name** | HANEEN SAEED ALOMARI |
 | **Student ID** | [Write your student ID here] |
 | **University Email** | [yourid]@std.psau.edu.sa |
 | **GitHub Username** | [your-github-username] |
