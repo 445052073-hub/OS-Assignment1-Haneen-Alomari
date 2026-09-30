@@ -30,8 +30,8 @@
 | Field | Your Answer |
 |-------|-------------|
 | **Full Name** | HANEEN SAEED ALOMARI |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
+| **Student ID** | 445052073 |
+| **University Email** | 445052073@std.psau.edu.sa |
 | **GitHub Username** | [your-github-username] |
 | **Repository Link** | [Paste your repository link here] |
  
