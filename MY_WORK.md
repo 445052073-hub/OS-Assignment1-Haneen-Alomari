@@ -238,7 +238,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I learned how to create and start threads using Runnable and Thread.start(). I learned how Thread.join() waits for a thread to finish. I also learned how processes can be managed using a ready queue. I understood how Round Robin scheduling works with threads. This assignment helped me understand multithreading better]
 
 ## Question 2: What was the most challenging part of this assignment?
 
@@ -246,7 +246,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[The hardest part was understanding the existing code. I also found it difficult to know where to add each feature. The waiting time feature was especially challenging. I had to understand how to use System.currentTimeMillis(). Testing each change helped me solve these problems]
 
 ## Question 3: How did you overcome the challenges you faced?
 
@@ -254,7 +254,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I worked on the assignment step by step. I checked the existing code before adding new code. I tested the program after each change. When I found an error, I checked the code location and corrected it. This helped me understand the program and complete the features]
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
@@ -262,7 +262,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[Multithreading can be used to perform multiple tasks in an application. For example, a web browser can load a page while downloading a file. Servers can also use threads to handle multiple users. Operating systems use scheduling to manage processes. These concepts will be useful in future programming projects]
 
 ### Optional: What would you like to learn more about?
 
