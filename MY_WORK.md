@@ -129,68 +129,69 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - [September 22,2026]
+**What I did**: Update University ID Number
 
-**Details**:
+**Details**:I created an account on the website using my university ID number and started working on the project; I then moved to line 150 to edit the university ID number.
 
-**Challenges**:
+**Challenges**:I didn't quite understand how the site works, and it was a bit difficult.
 
-**Solution**:
+**Solution**:I looked up how to change and create an account, and I finally understood it.
 
-**Time spent**:
-
----
-
-### Entry 2 - [Date and Time]
-**What I did**:
-
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
+**Time spent**:40
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**:
+### Entry 2 - [September 22,2026]
+**What I did**:Add priority attribute to process class
 
-**Details**:
+**Details**:I added a priority variable to the Process class and assigned each process a random priority value from 1 to 10. I also added the getPriority() method to retrieve the priority and display it when the process is added to the ready queue
 
-**Challenges**:
+**Challenges**:I had difficulty understanding where to add the priority variable and how to display its value without affecting the existing Round Robin scheduling
 
-**Solution**:
+**Solution**:I added the priority as a property inside the Process class and initialized it in the constructor. I then created a getter method and used it when displaying the process information in the ready queue
 
-**Time spent**:
-
----
-
-### Entry 4 - [Date and Time]
-**What I did**:
-
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
+**Time spent**:45
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**:
+### Entry 3 - [September 24,2026]
+**What I did**:track context switches in SchedulerSimulation
 
-**Details**:
+**Details**:I added a contextSwitches counter to the SchedulerSimulation class. I increased the counter each time a new process starts running by placing contextSwitches++ before currentThread.start(). I also added an output statement at the end of the simulation to display the total number of context switches
 
-**Challenges**:
+**Challenges**:I had difficulty identifying the correct location to increment the counter and where to display the final result
 
-**Solution**:
 
-**Time spent**:
+**Solution**:I placed the counter increment immediately before the current thread starts running and added the total count at the end of the scheduler simulation. I then ran the program to verify that the total number of context switches was displayed
+
+**Time spent**:40
+
+---
+
+### Entry 4 - [September 30,2026]
+**What I did**:Implement the waiting time
+
+**Details**:When a process is removed from the ready queue, I record the current time using System.currentTimeMillis(). I subtract the process’s recorded start time from the current time and store the calculated waiting time in the waitingTimes HashMap
+
+**Challenges**:The challenge was calculating the waiting time using the correct process and retrieving its previously recorded start time
+
+**Solution**:I used the process name to retrieve its start time from startTimes, calculated the difference between the current time and the start time, and stored the result in waitingTimes
+
+**Time spent**:50
+
+---
+
+### Entry 5 - [September 30,2026]
+**What I did**:Add process start time tracking
+
+**Details**:I used System.currentTimeMillis() to record the time when each process is added to the ready queue. I stored the process name and its start time in the startTimes HashMap
+
+**Challenges**:I needed to find the correct place to record the time so that each process would have its own starting timestamp
+
+**Solution**:I added the time-recording statement immediately after the process is added to the ready queue and stored it using the process name as the key
+
+**Time spent**:40
 
 ---
 
