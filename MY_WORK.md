@@ -294,7 +294,7 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[A process is a program with its own memory and resources. A thread runs inside a process and is lighter to create. In our code, we use Thread to simulate processes]
 
 ## Question 2: Ready Queue Behavior
 
@@ -306,7 +306,7 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[Our ready queue uses FIFO order. Each process gets one time quantum and, if unfinished, goes back to the end of the queue. This makes Round-Robin scheduling fair]
 
 Example from my output:
 ```
