@@ -310,11 +310,12 @@
 
 Example from my output:
 ```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
+[➕ P1 added to ready queue │ Burst time: 9915ms | Priority: 7
+  ➕ P2 added to ready queue │ Burst time: 3716ms | Priority: 5]
 ```
 
 **Explanation of example:**
-[Explain what is happening in the output snippet you pasted.]
+[P1 was added to the ready queue again because it did not finish in one time quantum. It was placed at the end of the queue to wait for its next turn]
 
 ## Question 3: Thread Lifecycle
 
@@ -325,15 +326,15 @@ Example from my output:
 **Your Answer:** *(3-5 sentences overall; one short explanation per state)*
 
 1. **New**: [When is P1 in the New state?]
-
+P1 is in the New state when its Thread object is created in addProcessToQueue() but before Thread.start() is called
 2. **Runnable**: [When does P1 become Runnable?]
-
+P1 becomes Runnable when currentThread.start() is called in the scheduler loop. The thread is then ready to run
 3. **Running**: [When is P1 Running?]
-
+P1 is Running when the CPU scheduler gives it the CPU and its run() method is executing. In the code, it runs for one time quantum
 4. **Waiting**: [When and why would a thread be Waiting?]
-
+The main thread enters Waiting when it calls currentThread.join() and waits for P1 to finish. P1 itself sleeps inside Thread.sleep(), so it is temporarily not running
 5. **Terminated**: [When is P1 Terminated?]
-
+P1 becomes Terminated after its run() method finishes and the thread completes its execution
 ## Question 4: Real-World Applications
 
 **Question**: Give **TWO** real-world examples where Round-Robin scheduling with threads would be useful. **At least one** must be an operating-system-level scenario (e.g., how an OS scheduler shares CPU time among running programs). The second can be any application you choose. For each, explain what the system is and **why Round-Robin fits** (fairness, responsiveness, predictability).
@@ -342,21 +343,21 @@ Example from my output:
 
 **Your Answer:** *(3-5 sentences per example)*
 
-### Example 1 (operating-system level): [Name of scenario]
+### Example 1 (operating-system level): [CPU Scheduling]
 
 **Description**:
-[Describe the real-world scenario.]
+[An operating system uses Round-Robin scheduling to share CPU time between running programs. Each program gets a fixed time quantum before another program gets the CPU]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[It is fair because each process gets a turn. It also keeps the system responsive and predictable. In our simulation, the process is a running program, the time quantum is the CPU time given to it, and the context switch happens when the CPU moves to another process]
 
-### Example 2: [Name of application/scenario]
+### Example 2: [Web Server]
 
 **Description**:
-[Describe the real-world scenario or application.]
+[A web server can use threads to handle requests from multiple users. Round-Robin can give each request a turn to use the CPU]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[It helps prevent one request from using the CPU for too long. This improves fairness and responsiveness. In our simulation, each request can represent a process, the time quantum is its CPU time, and the context switch happens when the server moves to another request]
 
 ## Summary
 
